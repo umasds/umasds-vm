@@ -1,13 +1,29 @@
+*This project is still under heavy development!*
+
+![Social Data Science](conf/sds.png)
 # The **Social Data Science** VM
-## An easy to use virtual machine for teaching data science
+## An easy to use virtual machine (VM) for teaching data science in the social sciences
 
 ## Usage
-1. Install VirtualBox
-2. Install Vagrant
-3. Create a new directory for the VM
-4. Start a terminal and change to the directory on the command line
-5. Run `vagrant init http://bethm.de/umasds-vm/package.box`
-6. Replace content of `Vagrantfile` with:
+### 1. Install necessary tools
+* Install VirtualBox: https://www.virtualbox.org/wiki/Downloads
+* Install Vagrant: https://www.vagrantup.com/downloads.html
+
+### 2. Prepare the VM
+* Start a terminal
+* Create a new directory a navigate to it:
+
+```
+$ mkdir umasds-vm
+$ cd umasds-vm
+```
+* Initialize the VM:
+
+```
+$ vagrant init http://bethm.de/umasds-vm/package.box
+```
+
+* Use a text editor to replace the content of `Vagrantfile` with:
 
 ```
 # -*- mode: ruby -*-
@@ -20,6 +36,10 @@ Vagrant.configure(2) do |config|
   end
 end
 ```
+### 3. Download and run the VM
 
-7. Run `vagrant up` on the command line and wait ...
-8. You should now see a new window with the **Social Data Science** desktop
+```
+$ vagrant up
+```
+* After a while the **Social Data Science** desktop should come up and you 
+ can start crunching data!
