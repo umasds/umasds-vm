@@ -28,8 +28,8 @@ echo "Install R from cran repository ..."
 apt-get install -y r-base r-base-dev libjpeg62 r-base-core r-base-html r-recommended libgomp1 r-cran-mgcv libjpeg-dev libpng12-dev libgstreamer0.10-0 libgstreamer-plugins-base0.10-0
 
 echo "Install RStudio ..."
-#wget --quiet http://download1.rstudio.org/rstudio-0.98.1103-amd64.deb
-#dpkg -i rstudio-0.98.1103-amd64.deb
+wget --quiet http://download1.rstudio.org/rstudio-0.98.1103-amd64.deb
+dpkg -i rstudio-0.98.1103-amd64.deb
 
 echo "Install git ..."
 apt-get install -y git gitk git-gui gitg
