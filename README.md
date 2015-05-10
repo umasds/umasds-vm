@@ -2,8 +2,7 @@
 
 ![Social Data Science](conf/sds.png)
 # The **Social Data Science** VM
-## An easy to use virtual machine (VM) for teaching data science in the social 
- sciences
+## An easy to use virtual machine (VM) for teaching data science in the social sciences
 
 ## Usage
 ### 1. Install necessary tools
