@@ -33,9 +33,11 @@ Vagrant.configure(2) do |config|
   config.vm.hostname = "umasds-vm"
   config.vm.provider "virtualbox" do |vb|
     vb.gui = true
+    vb.customize ["modifyvm", :id, "--vram", "16"]
   end
 end
 ```
+
 ### 3. Download and run the VM
 
 ```
