@@ -8,7 +8,8 @@
 4. Start a terminal and change to the directory on the command line
 5. Run `vagrant init http://bethm.de/umasds-vm/package.box`
 6. Replace content of `Vagrantfile` with:
-```ruby
+
+```
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 Vagrant.configure(2) do |config|
@@ -19,5 +20,6 @@ Vagrant.configure(2) do |config|
   end
 end
 ```
+
 7. Run `vagrant up` on the command line and wait ...
 8. You should now see a new window with the **Social Data Science** desktop
