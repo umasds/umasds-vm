@@ -2,7 +2,8 @@
 
 ![Social Data Science](conf/sds.png)
 # The **Social Data Science** VM
-## An easy to use virtual machine (VM) for teaching data science in the social sciences
+## An easy to use virtual machine (VM) for teaching data science in the social 
+ sciences
 
 ## Usage
 ### 1. Install necessary tools
@@ -11,37 +12,44 @@
 
 ### 2. Prepare the VM
 * Start a terminal
-* Create a new directory a navigate to it:
+  - *Ubuntu Linux*: press *command/Windows/Apple key* > type `terminal` > hit 
+   *enter*
+  - *MacOS X*: press *command/Windows/Apple key* + *space* > type `Terminal` > 
+   double click *Terminal* in the results
+  - *Windows*: press *command/Windows/Apple key* > type `cmd` > hit *enter*
+
+* To create a new directory and navigate to it type the following commands into 
+ the terminal and hit *enter* after each line:
+
+*Ubuntu Linux* and *MacOS X*: 
 
 ```
-$ mkdir umasds-vm
-$ cd umasds-vm
+mkdir ~/umasds-vm
+cd ~/umasds-vm
 ```
+
+*Windows*: 
+
+```
+mkdir %HOMEPATH%/umasds-vm
+cd %HOMEPATH%/umasds-vm
+```
+
 * Initialize the VM:
 
-```
-$ vagrant init http://bethm.de/umasds-vm/package.box
-```
-
-* Use a text editor to replace the content of `Vagrantfile` with:
+*all operating systems*: 
 
 ```
-# -*- mode: ruby -*-
-# vi: set ft=ruby :
-Vagrant.configure(2) do |config|
-  config.vm.box = "http://bethm.de/umasds-vm/package.box"
-  config.vm.hostname = "umasds-vm"
-  config.vm.provider "virtualbox" do |vb|
-    vb.gui = true
-    vb.customize ["modifyvm", :id, "--vram", "16"]
-  end
-end
+vagrant init http://bethm.de/umasds-vm/umasds-vm.box
 ```
 
 ### 3. Download and run the VM
 
+*all operating systems*: 
+
 ```
-$ vagrant up
+vagrant up
 ```
+
 * After a while the **Social Data Science** desktop should come up and you 
  can start crunching data!
