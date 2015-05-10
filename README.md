@@ -29,7 +29,7 @@ $ vagrant init http://bethm.de/umasds-vm/package.box
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 Vagrant.configure(2) do |config|
-  config.vm.box = "/home/arne/umasds-vm/package.box"
+  config.vm.box = "http://bethm.de/umasds-vm/package.box"
   config.vm.hostname = "umasds-vm"
   config.vm.provider "virtualbox" do |vb|
     vb.gui = true
