@@ -11,7 +11,7 @@ apt-get update
 apt-get upgrade -y
 
 ## install basic GUI
-apt-get install -y joe aptitude htop mc lxde virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11 firefox firefox-locale-de libreoffice libreoffice-l10n-de 
+apt-get install -y joe aptitude htop mc lxde virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11 firefox firefox-locale-de libreoffice libreoffice-l10n-de gimp
 
 ## install German language and set as default
 apt-get install -y language-pack-de language-pack-de-base language-pack-gnome-de wngerman wogerman wswiss 
@@ -40,6 +40,9 @@ apt-get install -y spyder spyder3
 ## install LaTeX
 apt-get install -y texmaker jabref texlive-base texlive-latex-base texlive-lang-german
 
+## fix lxdm shutdown bug
+echo "session required pam_systemd.so" >> /etc/pam.d/lxdm
+
 ## copy UMASDS specific config files
 cp /vagrant/conf/xorg.conf /etc/X11/xorg.conf
 cp /vagrant/conf/sds.png /home/vagrant/sds.png
@@ -66,6 +69,7 @@ cp /usr/share/applications/texmaker.desktop /home/vagrant/Desktop/
 cp /usr/share/applications/jabref.desktop /home/vagrant/Desktop/
 cp /usr/share/applications/libreoffice-writer.desktop /home/vagrant/Desktop/
 cp /usr/share/applications/libreoffice-calc.desktop /home/vagrant/Desktop/
+cp /usr/share/applications/gimp.desktop /home/vagrant/Desktop/
 
 ## start LXDE
 /etc/init.d/lxdm start
