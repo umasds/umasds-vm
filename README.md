@@ -56,8 +56,8 @@ vagrant up
 ### 4. Starting the VM
 * You can always start the VM by opening a *terminal*, changing to the 
  `umasds-vm` directory and starting `vagrant up` manually ...
-* ... but if you want a more convenient way to start the VM there is an easy 
- way to set up a shortcut on the desktop (*all operating systems*):
+* ... but if you want a more convenient way you can easily set up a shortcut on 
+  the desktop (*all operating systems*):
   1. Start the *Oracle VM VirtualBox Manager* - much like you started the 
     terminal above, just type in `oracle` instead
   2. Do a right click on *umasds-vm* > click left on *Create Shortcut on Desktop*
