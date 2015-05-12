@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>umasds-vm by umasds</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>umasds-vm</h1>
+        <h2>Easy to use virtual machine for teaching data science</h2>
+        <a href="https://github.com/umasds/umasds-vm" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <p><em>This project is still under heavy development!</em></p>
+
+<p><img src="https://raw.githubusercontent.com/umasds/umasds-vm/master/conf/sds.png" alt="Social Data Science"></p>
+
+<h1>
+<a id="the-social-data-science-vm" class="anchor" href="#the-social-data-science-vm" aria-hidden="true"><span class="octicon octicon-link"></span></a>The <strong>Social Data Science</strong> VM</h1>
+
+<h2>
+<a id="an-easy-to-use-virtual-machine-vm-for-teaching-data-science-in-the-social-sciences" class="anchor" href="#an-easy-to-use-virtual-machine-vm-for-teaching-data-science-in-the-social-sciences" aria-hidden="true"><span class="octicon octicon-link"></span></a>An easy to use virtual machine (VM) for teaching data science in the social sciences</h2>
+
+<h2>
+<a id="installation-and-setup" class="anchor" href="#installation-and-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Installation and setup</strong>
+</h2>
+
+<h3>
+<a id="1-install-necessary-tools" class="anchor" href="#1-install-necessary-tools" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. Install necessary tools</h3>
+
+<ul>
+<li>Install VirtualBox: <a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a>
+</li>
+<li>Install Vagrant: <a href="https://www.vagrantup.com/downloads.html">https://www.vagrantup.com/downloads.html</a>
+</li>
+</ul>
+
+<h3>
+<a id="2-prepare-the-vm" class="anchor" href="#2-prepare-the-vm" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. Prepare the VM</h3>
+
+<ul>
+<li>
+<p>Start a terminal</p>
+
+<ul>
+<li>
+<em>Ubuntu Linux</em>: press <em>command/Windows/Apple key</em> &gt; type <code>terminal</code> &gt; hit 
+<em>enter</em>
+</li>
+<li>
+<em>MacOS X</em>: press <em>command/Windows/Apple key</em> + <em>space</em> &gt; type <code>Terminal</code> &gt; 
+double click <em>Terminal</em> in the results</li>
+<li>
+<em>Windows</em>: press <em>command/Windows/Apple key</em> &gt; type <code>cmd</code> &gt; hit <em>enter</em>
+</li>
+</ul>
+</li>
+<li><p>To create a new directory and navigate to it type the following commands into 
+the terminal and hit <em>enter</em> after each line:</p></li>
+</ul>
+
+<p><em>Ubuntu Linux</em> and <em>MacOS X</em>: </p>
+
+<pre><code>mkdir ~/umasds-vm
+cd ~/umasds-vm
+</code></pre>
+
+<p><em>Windows</em>: </p>
+
+<pre><code>mkdir %HOMEPATH%/umasds-vm
+cd %HOMEPATH%/umasds-vm
+</code></pre>
+
+<ul>
+<li>Initialize the VM:</li>
+</ul>
+
+<p><em>all operating systems</em>: </p>
+
+<pre><code>vagrant init http://bethm.de/umasds-vm/umasds-vm.box
+</code></pre>
+
+<h3>
+<a id="3-download-and-run-the-vm-for-the-first-time" class="anchor" href="#3-download-and-run-the-vm-for-the-first-time" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. Download and run the VM for the first time</h3>
+
+<p><em>all operating systems</em>: </p>
+
+<pre><code>vagrant up
+</code></pre>
+
+<ul>
+<li>After a while the <strong>Social Data Science</strong> desktop should come up and you 
+can start crunching data!</li>
+</ul>
+
+<h3>
+<a id="4-starting-the-vm" class="anchor" href="#4-starting-the-vm" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. Starting the VM</h3>
+
+<ul>
+<li>You can always start the VM by opening a <em>terminal</em>, changing to the 
+<code>umasds-vm</code> directory and starting <code>vagrant up</code> manually ...</li>
+<li>... but if you want a more convenient way you can easily set up a shortcut on 
+the desktop (<em>all operating systems</em>):
+
+<ol>
+<li>Start the <em>Oracle VM VirtualBox Manager</em> - much like you started the 
+terminal above, just type in <code>oracle</code> instead</li>
+<li>Do a right click on <em>umasds-vm</em> &gt; click left on <em>Create Shortcut on Desktop</em>
+</li>
+<li>... et voilà! Anytime you want to start the VM now you just need to double
+click on the <em>umasds-vm</em> icon (blue cube saying "vbox") on the desktop</li>
+</ol>
+</li>
+</ul>
+
+<h3>
+<a id="5-stopping-the-vm" class="anchor" href="#5-stopping-the-vm" aria-hidden="true"><span class="octicon octicon-link"></span></a>5. Stopping the VM</h3>
+
+<ul>
+<li>Just click on the shutdown icon (red square with white circle) in the lower 
+right corner &gt; click on <em>Shut down</em>
+</li>
+</ul>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/umasds/umasds-vm/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/umasds/umasds-vm/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/umasds/umasds-vm"></a> is maintained by <a href="https://github.com/umasds">umasds</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
