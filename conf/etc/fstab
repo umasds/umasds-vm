@@ -1,0 +1,2 @@
+LABEL=cloudimg-rootfs	/	 ext4	defaults	0 0
+vagrant /vagrant vboxsf comment=systemd.automount,noauto,gid=vagrant,uid=vagrant 0 0

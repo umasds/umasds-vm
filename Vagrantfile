@@ -5,7 +5,7 @@ Vagrant.configure(2) do |config|
   config.vm.hostname = "umasds-vm"
   config.vm.provider "virtualbox" do |vb|
     vb.name = "umasds-vm-build"
-    vb.gui = true
+#    vb.gui = true
     vb.memory = 1024
     vb.cpus = 2
     vb.customize ["modifyvm", :id, "--cpuexecutioncap", "95"]
