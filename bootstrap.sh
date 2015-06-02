@@ -24,11 +24,11 @@ echo "Install LXDE ..."
 aptitude install -y lxde
 
 echo "Install Firefox, LibreOffice, and Gimp ..."
-aptitude install -y firefox firefox-locale-de libreoffice libreoffice-l10n-de gimp
+aptitude install -y firefox libreoffice gimp
 
 echo "Install English and German languages and set German as default ..."
-aptitude install -y language-pack-en language-pack-en-base language-pack-gnome-en 
-aptitude install -y language-pack-de language-pack-de-base language-pack-gnome-de wngerman wogerman wswiss 
+aptitude install -y language-pack-en language-pack-en-base language-pack-gnome-en firefox-locale-en libreoffice-l10n-en
+aptitude install -y language-pack-de language-pack-de-base language-pack-gnome-de firefox-locale-de libreoffice-l10n-de wngerman wogerman wswiss 
 dpkg-reconfigure locales
 setxkbmap -model pc105 -layout de -variant basic
 timedatectl set-timezone Europe/Berlin
